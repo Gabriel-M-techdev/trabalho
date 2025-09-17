@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Roupas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<img src="C:\Users\recep\Downloads\google\Banner para twitch retrô e divertido em pixels rosa e amarelo (1).png" style="width: 1900px; height: 480px; border-radius: 10px">     
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+        <!-- Menu principal -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="Produtos.html">Produtos</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="Roupas.html">Roupas</a></li>
+          </ul>
+          
+            </div>
+          </main>
+        </nav>
+      
+      <style>
+        /* Estilização da barra essa parte peguei com chat kkk nem fudendo ia lembrar isso , e nao foi passado ainda em aula style XD */
+
+        nav {
+          background-color: #f8f8f8;   /* cor de fundo clara */
+          padding: 15px;              /* espaço dentro da barra */
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve */
+          border-radius: 10px
+        }
+      
+        nav ul {
+          list-style: none;   /* remove os pontos da lista */
+          display: flex;      /* coloca os itens lado a lado */
+          gap: 30px;          /* espaço entre eles */
+          margin: 0;
+          padding: 0;
+         
+        }
+      
+        nav li {
+          display: inline;    /* cada item em linha */
+        }
+      
+        nav a {
+          text-decoration: none;   /* remove sublinhado */
+          font-size: 20px;         /* aumenta o tamanho do texto */
+          font-weight: bold;       /* deixa em negrito */
+          color: #333;             /* cor do texto */
+          transition: 0.3s;        /* suaviza animação no hover */
+        }
+      
+      
+    
+        nav {
+            background-color: #ee7605;
+            color: #ee7605;
+        }
+        nav a:hover {
+          color: #ffffff;          /* muda a cor ao passar o mouse */
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* sombra no hover */
+        }
+    
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;   /* sei que aqui eu utilizei o chat pos n queria usar strong e quis colar cores e estilizar o texto , mas o basico do site fluiu depois que fui enchendo linguiça  */
+        line-height: 1.6;      /* espaço entre linhas */
+        color: #333;           /* cor do texto */
+        margin: 40px;          /* espaço nas bordas */
+        background-color: #fafafa;
+      }
+      
+      h1 {
+        font-size: 36px;       /* título bem grande */
+        color: #ff6600;       /* cor vibrante */
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      h2 {
+        font-size: 28px;
+        color: #ff6600;
+        margin-top: 40px;
+      }
+      
+      p {
+        font-size: 18px;       /* aumenta o texto */
+        margin-bottom: 15px;   /* espaçamento entre parágrafos */
+        text-align: justify;   /* texto alinhado */
+      }
+      
+      strong {
+        color: #ff0000;        /* destaque para palavras fortes */
+      }
+
+
+      /* style.css */
+
+/* --- Estilos Gerais do Corpo e Títulos --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;   /* sei que aqui eu utilizei o chat pos n queria usar strong e quis colar cores e estilizar o texto , mas o basico do site fluiu depois que fui enchendo linguiça  */
+    line-height: 1.6;      /* espaço entre linhas */
+    color: #333;           /* cor do texto */
+    margin: 40px;          /* espaço nas bordas */
+    background-color: #fafafa;
+  }
+  
+  h1 {
+    font-size: 36px;       /* título bem grande */
+    color: #ff6600;       /* cor vibrante */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #ff6600;
+    margin-top: 40px;
+  }
+  
+  p {
+    font-size: 18px;       /* aumenta o texto */
+    margin-bottom: 15px;   /* espaçamento entre parágrafos */
+    text-align: justify;   /* texto alinhado */
+  }
+  
+  strong {
+    color: #ff0000;        /* destaque para palavras fortes */
+  }
+  
+
+/* --- Estilos para a Galeria de Fotos --- */
+.photo-gallery {
+  display: grid; /* Usaremos Grid para um layout mais robusto e fácil */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colunas responsivas */
+  gap: 25px; /* Espaço entre as fotos */
+  padding: 40px; /* Mais padding para a galeria */
+  justify-items: center; /* Centraliza as imagens dentro de suas células no grid */
+  max-width: 1200px; /* Limita a largura máxima da galeria */
+  margin: 30px auto; /* Centraliza a galeria na página */
+  background-color: #ffffff; /* Fundo branco para a galeria */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave e elegante */
+}
+
+.photo-gallery img {
+  width: 100%; /* Garante que a imagem preencha a célula do grid */
+  height: 300px; /* Altura fixa para todas as imagens, para consistência */
+  object-fit: cover; /* Recorta a imagem para preencher a altura sem distorcer */
+  border: 5px solid #eee; /* Borda mais grossa e clara */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Sombra nas imagens */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para hover */
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); /* Sombra mais intensa no hover */
+  border-color: #ee7605; /* Borda laranja no hover */
+}
+
+
+/* --- Estilos para a Paginação --- */
+.pagination {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+  background-color: #f8f8f8; /* Um fundo leve para a seção de paginação */
+  border-top: 1px solid #eee; /* Uma linha divisória sutil */
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+}
+
+.pagination a {
+  color: #ee7605; /* Cor laranja vibrante para os links da paginação */
+  padding: 12px 20px; /* Aumenta o tamanho dos botões */
+  text-decoration: none;
+  border: 1px solid #ee7605; /* Borda da mesma cor */
+  margin: 0 6px;
+  border-radius: 25px; /* Botões mais arredondados (formato de pílula) */
+  transition: all 0.3s ease;
+  font-weight: bold;
+  min-width: 40px; /* Garante uma largura mínima */
+  display: inline-block; /* Para o padding e min-width funcionarem */
+}
+
+.pagination a.active {
+  background-color: #ee7605;
+  color: white;
+  border: 1px solid #ee7605;
+  box-shadow: 0 4px 8px rgba(238, 118, 5, 0.3); /* Sombra sutil na página ativa */
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #fff3e0; /* Fundo mais claro e suave no hover */
+  color: #d13000; /* Um vermelho mais profundo no hover */
+  border-color: #d13000;
+  transform: translateY(-2px); /* Efeito de "levantar" no hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pagination a.prev,
+.pagination a.next {
+  border: 1px solid #ccc; /* Borda mais suave para Prev/Next */
+  color: #555;
+  background-color: #fefefe;
+  font-weight: normal; /* Menos negrito para Prev/Next */
+}
+
+.pagination a.prev:hover,
+.pagination a.next:hover {
+  background-color: #e0e0e0;
+  color: #333;
+  border-color: #bbb;
+}
+
+
+/* --- Responsividade --- */
+@media (max-width: 992px) {
+  .photo-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta colunas para telas médias */
+    padding: 30px;
+  }
+  .photo-gallery img {
+    height: 250px;
+  }
+  nav ul {
+    gap: 20px;
+  }
+  nav a {
+    font-size: 20px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  nav ul {
+    flex-wrap: wrap; /* Permite que os itens da nav quebrem a linha */
+    justify-content: center;
+    gap: 15px;
+  }
+  nav a {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+  .photo-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Mais colunas em telas menores */
+    padding: 20px;
+  }
+  .photo-gallery img {
+    height: 200px;
+  }
+  .pagination a {
+    padding: 10px 15px;
+    margin: 0 3px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+  nav a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .photo-gallery {
+    grid-template-columns: 1fr; /* Uma única coluna para telas muito pequenas */
+    padding: 15px;
+  }
+  .photo-gallery img {
+    height: 250px; /* Altura maior em coluna única */
+    max-width: 90%; /* Limita a largura em telas muito pequenas */
+    margin: auto;
+  }
+  .pagination a {
+    padding: 8px 12px;
+    margin: 0 2px;
+    font-size: 0.8em;
+  }
+  .pagination a.prev,
+  .pagination a.next {
+    display: block; /* Quebra Anterior/Próxima em nova linha se for muito apertado */
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
+      </style>
+  <h1>Roupas</h1> 
+  <h3>Aqui você pode listar camisetas, Chapelaria e etc.</h3>
+
+  <main>
+            
+    <div class="photo-gallery">
+      <img src="C:\Users\recep\Downloads\google\Imagem do WhatsApp de 2025-09-12 à(s) 12.59.28_4dbb447f.jpg" alt="Descrição da Foto 1">
+      <img src="C:\Users\recep\Downloads\google\Imagem do WhatsApp de 2025-09-12 à(s) 12.59.28_62d64d47.jpg" alt="Descrição da Foto 2">
+      <img src="C:\Users\recep\Downloads\google\Imagem do WhatsApp de 2025-09-12 à(s) 12.59.28_0b54a135.jpg" alt="Descrição da Foto 3">
+      <img src="C:\Users\recep\Downloads\google\Imagem do WhatsApp de 2025-09-12 à(s) 12.59.28_6caa80be.jpg" alt="Descrição da Foto 4">
+      </div>
+
+    <div class="pagination">
+      <a href="#" class="prev">&laquo; Anterior</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">&rsaquo;</a> <a href="#" class="next">Próxima &raquo;</a>
+</body>
+</html>
